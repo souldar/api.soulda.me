@@ -16,7 +16,7 @@ export default (appInfo: EggAppInfo) => {
   };
 
   config.security = {
-    domainWhiteList: [ 'localhost:3000' ],
+    domainWhiteList: [ 'localhost:3000', 'api.soulda.me' ],
     csrf: {
       enable: false,
     },

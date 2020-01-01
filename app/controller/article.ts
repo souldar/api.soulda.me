@@ -15,7 +15,7 @@ export default class ArticleController extends Controller {
 
   public async createArticle () {
     const { article } = this.ctx.request.body;
-    const isSuccess = await this.service.article.addArticle(article)
+    const isSuccess = await this.service.article.addArticle(article);
 
     this.ctx.status = isSuccess ? 200 : 500;
   }

@@ -10,8 +10,6 @@ export default class Test extends Service {
    * @param name - your name
    */
   public async sayHi(name: string) {
-    const articles =  await this.app.mysql.select('article');
-    console.log(articles)
-    return `hi, ${name}! has ${articles.length} articles`;
+    return `hi, ${name}`;
   }
 }
